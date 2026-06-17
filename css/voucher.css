@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #F5F1ED;
+    overflow-x: hidden;
+}
+
+.main-content {
+    padding: 40px 160px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 32px;
+}
+
+.page-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.page-subtitle {
+    color: #9CA3AF;
+    font-size: 15px;
+}
+
+.title-underline {
+    width: 140px;
+    height: 3px;
+    background: #FF6B35;
+    margin-top: 10px;
+}
+
+.search-section {
+    margin-bottom: 40px;
+}
+
+.search-bar {
+    position: relative;
+    max-width: 96%;
+}
+
+.search-bar input {
+    width: 100% !important;
+    padding: 14px 20px 14px 44px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: 'SF Pro', sans-serif;
+    background: white;
+    color: #6B7280;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #FF6B35;
+}
+
+.search-bar input::placeholder {
+    color: #9CA3AF;
+}
+
+.search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9CA3AF;
+    font-size: 18px;
+}
+
+.voucher-toggle {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.voucher-toggle button {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #E5E7EB;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.voucher-toggle button.active {
+    background: #FF6B35;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.voucher-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* Agar kartu tetap turun ke bawah jika layar sangat sempit */
+    gap: 20px;
+}
+
+
+.voucher-card {
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 80px 1fr 100px;
+    gap: 20px;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.voucher-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+}
+
+.voucher-logo {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #FFC72C;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.voucher-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 100px;
+}
+
+.voucher-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 2px;
+}
+
+
+.voucher-merchant {
+    font-size: 13px;
+    color: #6B7280;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.btn-redeem {
+    color: white;
+
+}
+
+.voucher-description {
+    font-size: 12px;
+    color: #9CA3AF;
+    line-height: 1;
+}
+
+.voucher-expiry {
+    font-size: 11px;
+    color: #9CA3AF;
+    margin-top: 4px;
+}
+
+.voucher-redeem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.redeem-btn:hover {
+    background: #E55A2B;
+    transform: scale(1.05);
+}
+
+.voucher-credits {
+    text-align: center;
+}
+
+.credit-amount {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+}
+
+.credit-label-small {
+    font-size: 11px;
+    color: white;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.stock-info {
+    font-size: 11px;
+    color: #f0f0f0;
+    margin-top: 4px;
+}
+
+.voucher-redeem::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    background: linear-gradient(135deg, #FF8A50 0%, #FF6B35 100%);
+    border-radius: 0 16px 16px 0;
+    z-index: 0;
+    padding: 10px;
+}
+
+.voucher-redeem>* {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .voucher-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-nav,
+    .main-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .voucher-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .voucher-card {
+        grid-template-columns: 60px 1fr 90px;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    .voucher-logo {
+        width: 60px;
+        height: 60px;
+        font-size: 36px;
+    }
+
+    .voucher-redeem::before {
+        width: 100px;
+    }
+}

@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro', system-ui, sans-serif;
+}
+
+body {
+    background: #F5F1ED;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 60px;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    margin-bottom: 6px;
+}
+
+.page-header p {
+    color: #9CA3AF;
+}
+
+.underline {
+    width: 120px;
+    height: 3px;
+    background: #FF6B35;
+    margin-top: 10px;
+}
+
+.search-bar {
+    margin: 28px 0;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 30px;
+    border: 1px solid #E5E7EB;
+}
+
+.course-toggle {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.course-toggle button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #E5E7EB;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.course-toggle button.active {
+    background: #FF6B35;
+    color: white;
+}
+
+.my-course-card {
+    display: flex;
+    gap: 24px;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.my-course-card img {
+    width: 240px;
+    height: 140px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.course-content h3 {
+    font-size: 18px;
+}
+
+.author {
+    font-size: 13px;
+    color: #6B7280;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background: #E5E7EB;
+    height: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress {
+    height: 100%;
+}
+
+.progress.orange {
+    background: #F0843C;
+}
+
+.progress.green {
+    background: #5FB760;
+}
+
+.course-meta {
+    display: grid;
+    /* Kolom 1 untuk harga (200px), Kolom 2 untuk purchase (sisanya) */
+    grid-template-columns: 200px 1fr; 
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.price-info {
+    font-size: 14px;
+    color: #4B5563;
+}
+
+.purchase-info {
+    font-size: 14px;
+    color: #9CA3AF;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.in-progress {
+    background: #FFE6D6;
+    color: #FF6B35;
+}
+
+.completed {
+    background: #E3F4E8;
+    color: #4CAF50;
+}
+
+/* Container untuk tombol aksi */
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Tombol Utama (Preview Video) */
+.actions .primary {
+    background: #FF6B35; /* Orange Swapify */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.actions .primary:hover {
+    background: #E05A26;
+}
+
+
+/* Style tambahan untuk Category Tag agar lebih cantik */
+.category-tag {
+    font-size: 10px;
+    font-weight: 800;
+    color: #FF6B35;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.btn-buy {
+    background-color: #FF6E30;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    border: none;
+    width: 100%;
+}
+
+.btn-buy:hover {
+    background-color: #e55a20;
+    transform: translateY(-2px);
+}
+
+.btn-view-course {
+    display: inline-block;
+    background: #FF6B35;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background 0.2s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-view-course:hover {
+    background: #E05A26;
+}
+
+.category-label {
+    font-size: 11px;
+    font-weight: 800;
+    color: #FF6B35;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.purchase-info {
+    font-size: 13px;
+    color: #9CA3AF;
+}
+
+/* Container untuk judul dan tombol agar sejajar */
+.section-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Style Tombol Upload */
+.btn-upload {
+    background: #FF6B35;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease;
+}
+
+.btn-upload:hover {
+    background: #E05A26;
+}
+
+.plus-icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* Style tambahan untuk tag kategori di dalam card */
+.category-tag {
+    font-size: 10px;
+    font-weight: 800;
+    color: #FF6B35;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px;
+    background: white;
+    border-radius: 20px;
+    color: #9CA3AF;
+    border: 2px dashed #E5E7EB;
+}

@@ -1,0 +1,147 @@
+/* Layout */
+.booster-container {
+    padding: 40px 80px;
+    background-color: #F5F1ED;
+    min-height: 100vh;
+}
+
+.header-title h1 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.header-title p {
+    color: #6B7280;
+    margin-bottom: 40px;
+}
+
+/* Package Section */
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.package-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card h2 {
+    font-size: 18px;
+    color: #374151;
+    margin-bottom: 20px;
+}
+
+.credits {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.credits span {
+    font-size: 18px;
+    color: #9CA3AF;
+    font-weight: normal;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.package-features li {
+    font-size: 14px;
+    color: #4B5563;
+    margin-bottom: 12px;
+}
+
+.package-features li::before {
+    content: "✓";
+    margin-right: 10px;
+    color: #10B981;
+    font-weight: bold;
+}
+
+.package-features .bonus {
+    color: #E68A4D;
+    font-weight: bold;
+}
+
+.price-tag {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.buy-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #FF8A50 0%, #FF6B35 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* History */
+.history-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.history-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 15px;
+    border-bottom: 2px solid #F3F4F6;
+    font-size: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+.status-badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.text-muted {
+    font-size: 12px;
+    color: #9CA3AF;
+}
+
+.empty-history {
+    text-align: center;
+    padding: 40px;
+    color: #9CA3AF;
+}

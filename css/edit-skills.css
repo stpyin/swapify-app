@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #4A90E2;
+    --teach-color: #e3f2fd;
+    --teach-text: #1976d2;
+    --learn-color: #f3e5f5;
+    --learn-text: #7b1fa2;
+}
+
+.edit-skills-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-back {
+    margin-bottom: 30px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.skill-card-edit {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-icon {
+    font-size: 2rem;
+    background: #f8f9fa;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.skill-search-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+.skill-search-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.selected-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tag.teach {
+    background: var(--teach-color);
+    color: var(--teach-text);
+}
+
+.tag.learn {
+    background: var(--learn-color);
+    color: var(--learn-text);
+}
+
+.remove-tag {
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.suggested-skills {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.suggest-btn {
+    background: none;
+    border: 1px dashed #ccc;
+    padding: 4px 10px;
+    border-radius: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #666;
+}
+
+.suggest-btn:hover {
+    background: #f0f0f0;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-save {
+    background: linear-gradient(135deg, #FF6B35, #FF9A5A);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}

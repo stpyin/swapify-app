@@ -1,0 +1,194 @@
+/* --- Global Variables & Reset --- */
+:root {
+    /* Warna sesuai request kamu */
+    --main-bg: #F4EFE9;      /* Background Utama (Krem) */
+    --form-bg: #F9F7F3;      /* Background Form (Putih Gading) */
+    --text-label: #3E3E3E;   /* Warna Label */
+    
+    /* Tombol */
+    --btn-blue: #0C1EDA;     /* Biru Register Atas */
+    --btn-orange: #FF6300;   /* Oranye Login & Register Bawah */
+    
+    /* Font */
+    --font-main: 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--main-bg);
+    color: #333;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.title-section {
+    width: 60vw;
+    margin-bottom: 20px;
+}
+
+.title-section h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.title-section p {
+    color: #888; /* Warna abu-abu teks deskripsi */
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Garis oranye di bawah judul */
+.title-underline {
+    width: 80px;
+    height: 3px;
+    background-color: var(--btn-orange);
+    border-radius: 2px;
+}
+
+/* --- Form Container --- */
+.form-container {
+    background-color: var(--form-bg);
+    width: 60vw;
+    /* max-width: 800px;  */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03); 
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--text-label);
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Input Styles */
+.form-control {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid transparent; /* Border transparan default */
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    font-family: var(--font-main);
+    transition: border 0.2s ease;
+}
+
+/* Efek saat input diklik */
+.form-control:focus {
+    border: 1px solid var(--btn-blue);
+}
+
+::placeholder {
+    color: #aaa;
+    font-weight: normal;
+}
+
+/* --- Custom File Upload (Trik CSS) --- */
+.file-upload-wrapper {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.file-upload-wrapper:hover {
+    border: 1px solid #ddd;
+}
+
+/* Input file asli dibuat transparan menutupi wrapper */
+.file-upload-wrapper input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-text {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.upload-icon {
+    font-size: 20px;
+    color: #888;
+    font-weight: bold;
+}
+
+/* --- Tombol Bawah (Register Besar) --- */
+.btn-submit-container {
+    width: 100%;
+    /* Sesuaikan dengan lebar form */
+    text-align: center;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--btn-orange);
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    font-family: var(--font-main);
+    margin-bottom: 15px;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}
+
+/* Link Login di paling bawah */
+.footer-link {
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-link a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.footer-link a:hover {
+    color: var(--btn-orange);
+}

@@ -1,0 +1,47 @@
+.revenue-amount {
+    color: #10B981;
+    font-weight: 700;
+}
+
+.status-paid {
+    background: #D1FAE5;
+    color: #059669;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-waiting {
+    background: #FEF3C7;
+    color: #D97706;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.summary-banner {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.summary-item {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    flex: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.summary-item label {
+    color: #6B7280;
+    font-size: 14px;
+}
+
+.summary-item h2 {
+    color: #10B981;
+    margin-top: 5px;
+    font-size: 24px;
+}

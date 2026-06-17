@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 60px;
+    background: white;
+    border-bottom: 1px solid #E5E7EB;
+    height: 72px;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.logo-icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF6B35;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+.nav-link {
+    color: #6B7280;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 4px;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: #2563EB;
+    transform: translateY(-1px);
+}
+
+.nav-link.active {
+    color: #2563EB;
+    font-weight: 600;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #2563EB, #3B82F6);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+    white-space: nowrap;
+}
+
+
+.credit-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #FEF3EF 0%, #FFEBE5 100%);
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(255, 107, 53, 0.1);
+}
+
+.credit-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 107, 53, 0.2);
+    background: linear-gradient(135deg, #FFEBE5 0%, #FFE0D6 100%);
+}
+
+.credit-icon {
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, #FF6B35 0%, #FF8C5A 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(255, 107, 53, 0.3);
+}
+
+.credit-value {
+    font-weight: 700;
+    color: #1F2937;
+    font-size: 14px;
+}
+
+
+.coin-icon {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.coin-icon:hover {
+    transform: rotate(15deg) scale(1.1);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+
+.user-avatar {
+    position: relative;
+}
+
+.user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid #E5E7EB;
+    transition: all 0.3s ease;
+}
+
+.user-avatar img:hover {
+    border-color: #2563EB;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+
+@media (max-width: 1200px) {
+    .nav-menu {
+        gap: 28px;
+    }
+
+    .header-nav {
+        padding: 16px 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .user-section {
+        gap: 12px;
+    }
+
+    .user-name {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        padding: 16px 20px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+}
+
+
+.admin-divider {
+    width: 1px;
+    height: 20px;
+    background-color: #ddd;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}

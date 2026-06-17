@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro', system-ui, sans-serif;
+}
+
+body {
+    background: #F5F1ED;
+}
+
+.my-course-card {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.my-course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 60px;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    margin-bottom: 6px;
+}
+
+.page-header p {
+    color: #9CA3AF;
+}
+
+.underline {
+    width: 120px;
+    height: 3px;
+    background: #FF6B35;
+    margin-top: 10px;
+}
+
+.search-bar {
+    margin: 28px 0;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 30px;
+    border: 1px solid #E5E7EB;
+}
+
+.toggle {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.toggle button {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #E5E7EB;
+    cursor: pointer;
+}
+
+.toggle .active {
+    background: #FF6B35;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.my-course-card {
+    display: flex;
+    gap: 24px;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.my-course-card img {
+    width: 220px;
+    height: 140px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.course-content h3 {
+    font-size: 18px;
+}
+
+.author {
+    font-size: 13px;
+    color: #6B7280;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background: #E5E7EB;
+    height: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress {
+    height: 100%;
+}
+
+.progress.orange {
+    background: #F0843C;
+}
+
+.progress.green {
+    background: #5FB760;
+}
+
+.course-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.in-progress {
+    background: #FFE6D6;
+    color: #FF6B35;
+}
+
+.completed {
+    background: #E3F4E8;
+    color: #4CAF50;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+}
+
+.primary {
+    background: linear-gradient(135deg, #FF6B35, #FF9A5A);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.secondary {
+    background: white;
+    border: 1px solid #D1D5DB;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}

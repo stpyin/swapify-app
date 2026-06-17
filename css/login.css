@@ -1,0 +1,142 @@
+:root {
+    --main-bg: #F4EFE9;
+    --form-bg: #F9F7F3;
+    --text-label: #3E3E3E;
+    --btn-blue: #0C1EDA;
+    --btn-orange: #FF6300;
+    --font-main: 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--main-bg);
+    color: #333;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.title-section {
+    width: 60vw;
+    margin-bottom: 20px;
+}
+
+.title-section h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.title-section p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.title-underline {
+    width: 80px;
+    height: 3px;
+    background-color: var(--btn-orange);
+    border-radius: 2px;
+}
+
+.form-container {
+    background-color: var(--form-bg);
+    width: 60vw;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--text-label);
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    font-family: var(--font-main);
+    transition: border 0.2s ease;
+}
+
+.form-control:focus {
+    border: 1px solid var(--btn-blue);
+}
+
+::placeholder {
+    color: #aaa;
+    font-weight: normal;
+}
+
+.btn-submit-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--btn-orange);
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    font-family: var(--font-main);
+    margin-bottom: 15px;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}
+
+.footer-link {
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-link a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.footer-link a:hover {
+    color: var(--btn-orange);
+}

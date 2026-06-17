@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #F5F1ED;
+    overflow-x: hidden;
+}
+
+.main-content {
+    padding: 40px 60px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.page-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    color: #9CA3AF;
+    font-size: 15px;
+}
+
+.title-underline {
+    width: 140px;
+    height: 3px;
+    background: #FF6B35;
+    margin-top: 14px;
+}
+
+.status-badge {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.status-item {
+    background: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+    border: 1px solid #E5E7EB;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 24px;
+    align-items: start;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.resume-card {
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 24px;
+}
+
+.upload-area {
+    border: 2px dashed #D1D5DB;
+    border-radius: 12px;
+    padding: 60px 40px;
+    text-align: center;
+    background: #FAFAFA;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    display: block;
+}
+
+.upload-area:hover {
+    border-color: #FF6B35;
+    background: #FFF9F7;
+}
+
+.upload-area input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-icon {
+    width: 64px;
+    height: 64px;
+    background: #F3F4F6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 32px;
+    color: #9CA3AF;
+    pointer-events: none;
+}
+
+.upload-text {
+    font-size: 15px;
+    color: #6B7280;
+    margin-bottom: 8px;
+    pointer-events: none;
+}
+
+.upload-text strong {
+    color: #FF6B35;
+    font-weight: 600;
+}
+
+.upload-hint {
+    font-size: 13px;
+    color: #9CA3AF;
+    pointer-events: none;
+}
+
+.file-name {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #10B981;
+    font-weight: 500;
+}
+
+.details-card {
+    margin-top: 30px;
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'SF Pro', sans-serif;
+    color: #1F2937;
+    transition: border 0.2s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #FF6B35;
+}
+
+.form-input.with-icon {
+    padding-left: 44px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9CA3AF;
+    font-size: 16px;
+}
+
+textarea.form-input {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: #FF6B35;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'SF Pro', sans-serif;
+}
+
+.submit-btn:hover {
+    background: #E55A2B;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.guidelines-card {
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 32px;
+    position: sticky;
+    top: 24px;
+}
+
+.guidelines-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+
+.guidelines-subtitle {
+    font-size: 14px;
+    color: #6B7280;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.guideline-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.guideline-item:last-child {
+    margin-bottom: 0;
+}
+
+.guideline-icon {
+    width: 40px;
+    height: 40px;
+    background: #E8F5E9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.guideline-content h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 4px;
+}
+
+.guideline-content p {
+    font-size: 13px;
+    color: #6B7280;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guidelines-card {
+        position: static;
+    }
+
+    .header-nav,
+    .main-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 36px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .page-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .status-badge {
+        width: 100%;
+    }
+
+    .status-item {
+        flex: 1;
+        text-align: center;
+    }
+}

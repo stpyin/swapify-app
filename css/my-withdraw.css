@@ -1,0 +1,243 @@
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: #111827;
+    font-weight: 800;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.table-container {
+    overflow-x: auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    background: white;
+}
+
+
+.history-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+
+.history-table th {
+    background-color: #F9FAFB;
+    color: #6B7280;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    padding: 16px 24px;
+    text-align: left;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.history-table td {
+    padding: 20px 24px;
+    border-bottom: 1px solid #F3F4F6;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.history-table tbody tr:hover {
+    background-color: #F9FAFB;
+}
+
+
+.money-text {
+    color: #059669;
+    font-weight: 700;
+    font-size: 15px;
+    background: #ECFDF5;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.credit-text {
+    color: #6B7280;
+    font-weight: 600;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.status-completed {
+    background-color: #D1FAE5;
+    color: #047857;
+}
+
+.status-pending {
+    background-color: #FFF0E6;
+    color: #FF6B35;
+}
+
+.status-failed {
+    background-color: #FEE2E2;
+    color: #DC2626;
+}
+
+.empty-state {
+    padding: 60px;
+    text-align: center;
+    color: #9CA3AF;
+}
+
+.page-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.btn-withdraw {
+    background-color: #FF6B35;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    /* Jarak icon + */
+}
+
+.btn-withdraw:hover {
+    background-color: #e55a2b;
+}
+
+.container {
+    max-width: 1400px !important;
+    width: 95% !important;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-top: 10px;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 28px;
+    color: #111827;
+    font-weight: 800;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E5E7EB;
+    margin-top: 20px;
+}
+
+.history-table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+.history-table th {
+    background-color: #F9FAFB;
+    color: #6B7280;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    padding: 18px 24px;
+    text-align: left;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.history-table td {
+    padding: 24px 24px;
+    border-bottom: 1px solid #F3F4F6;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.history-table tbody tr:hover {
+    background-color: #F9FAFB;
+}
+
+.date-primary {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.date-secondary {
+    font-size: 13px;
+    color: #9CA3AF;
+    margin-top: 4px;
+}
+
+.credit-amount {
+    font-weight: 700;
+    color: #EA580C;
+    font-size: 16px;
+}
+
+.money-badge {
+    font-weight: 700;
+    color: #059669;
+    background: #ECFDF5;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #D1FAE5;
+}
+
+.bank-name {
+    font-weight: 700;
+    color: #111827;
+}
+
+.account-number {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #374151;
+    font-size: 16px;
+}
+
+.status-badge {
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-completed {
+    background-color: #DEF7EC;
+    color: #03543F;
+    border: 1px solid #BCF0DA;
+}
+
+.status-pending {
+    background-color: #FFF8F1;
+    color: #9A3412;
+    border: 1px solid #FFEDD5;
+}
+
+.status-failed {
+    background-color: #FDE8E8;
+    color: #9B1C1C;
+    border: 1px solid #FBD5D5;
+}
